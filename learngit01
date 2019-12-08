@@ -4,4 +4,6 @@ git init 初始化git仓库
 git add file添加文件，可一次添加多个
 git commit -m <message>提交文件  -m文件说明；可以一次提交多个，多次add， 一次commit
 git push 把本地库记录推送到远程库
-版本回退：
+git log 显示从最近到最远的提交日志 --pretty=online
+git reset版本回退 --hard HEAD^回退到上个版本，^^上两个，~100上一百个
+git reset --hard <commitid>

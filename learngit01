@@ -64,4 +64,21 @@ git tag v0.9 commitid 对以前版本打标签
 标签按字母排序
 git show v1.0 查看标签信息
 git -a v1.0 -m "打标签" commitid 对某版本打标签并写说明
+git tag -d v1.0 删除标签
+git push origin v1.0推送v1.0标签对应的commit到远程
+git push origin --tags 推送所有未推送到远程的本地标签
+
+
+git tag -d v1.0先删除本地标签
+git push origin :refs/tags/v1.0然后删除远程的标签
+
+在GitHub上可以fork开源仓库，自己拥有fork后的仓库权限，可以推送pull request来对原作者贡献代码
+
+国内git托管服务--码云(gitee.com),对五人以下团队免费，提供代码质量检测，项目演示，管理，代码托管，文档管理
+
+git配置
+配置文件在.git/config,删除alias对应行就可以删除别名
+
+git config --global alias.st status 配置命令别名status 只用敲st；--global意思是对当前用户而不只是仓库
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 

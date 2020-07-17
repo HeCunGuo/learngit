@@ -1,7 +1,15 @@
 Learngit02
 
-遇到的问题：
+问题1：
 手动修改Git远程仓库内容导致的无法合并分支
 
 解决：
 将修改保存到本地，使两边同步，然后提交
+
+问题2
+警告Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+
+解决：
+重新生成key： ssh-keygen -t rsa -C "12345678@qq.com"
+并添加到github
+

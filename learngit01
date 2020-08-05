@@ -4,6 +4,7 @@ git init 初始化git仓库
 git add file添加文件到暂存区index，可一次添加多个
 git commit -m <message>提交文件到分支（master），  -m文件说明；可以一次提交多个，多次add， 一次commit
 git push 把本地库记录推送到远程库
+
 git log 显示从最近到最远的提交日志 --pretty=online   Q退出
 git reset版本回退 --hard HEAD^回退到上个版本，^^上两个，~100上一百个
 git reset --hard <commitid>
@@ -69,13 +70,13 @@ git tag -d v1.0 删除标签
 git push origin v1.0推送v1.0标签对应的commit到远程
 git push origin --tags 推送所有未推送到远程的本地标签
 
-
 git tag -d v1.0先删除本地标签
 git push origin :refs/tags/v1.0然后删除远程的标签
 
-在GitHub上可以fork开源仓库，自己拥有fork后的仓库权限，可以推送pull request来对原作者贡献代码
 
+在GitHub上可以fork开源仓库，自己拥有fork后的仓库权限，可以推送pull request来对原作者贡献代码
 国内git托管服务--码云(gitee.com),对五人以下团队免费，提供代码质量检测，项目演示，管理，代码托管，文档管理
+
 
 git配置
 配置文件在.git/config,删除alias对应行就可以删除别名

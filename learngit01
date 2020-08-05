@@ -7,6 +7,7 @@ git push 把本地库记录推送到远程库
 git log 显示从最近到最远的提交日志 --pretty=online   Q退出
 git reset版本回退 --hard HEAD^回退到上个版本，^^上两个，~100上一百个
 git reset --hard <commitid>
+git reset --soft <commitid>
 git reflog 查看记录的每一条命令
 
 工作区和暂存区
